@@ -1,8 +1,6 @@
-import 'dart:ffi';
-
 class Music {
-  final Long id;
-  final Long userId;
+  final int id;
+  final int userId;
   final String userNickname;
   final String title;
   List<MusicFile> files;
@@ -40,7 +38,7 @@ class Music {
 }
 
 class MusicFile {
-  final Long id;
+  final int id;
   final String originalFileName;
   final String savedName;
   final String fileUrl;
